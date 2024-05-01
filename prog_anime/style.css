@@ -1,0 +1,32 @@
+.teste{
+   border-color: black;
+   width: 400px;
+   height: 100px;
+   background-color: aqua;
+   animation-name: animacao;
+}
+.animacao{
+        -webkit-animation: flip-horizontal-bottom 0.5s cubic-bezier(0.755, 0.050, 0.855, 0.060) 100ms infinite reverse forwards;
+                animation: flip-horizontal-bottom 0.5s cubic-bezier(0.755, 0.050, 0.855, 0.060) 100ms infinite reverse forwards;   
+    }
+    @-webkit-keyframes animacao {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      @keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      
